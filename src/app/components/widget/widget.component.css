@@ -1,0 +1,78 @@
+
+.wContainer {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+img.wig-img {
+  width: 35px;
+  border-radius: 8px;
+}
+
+div.status {
+  color: red;
+  font-size: 64px;
+  position: absolute;
+  right: -4px;
+  bottom: 17px;
+  /* background: green; */
+  -webkit-text-stroke: 2px white;
+}
+.avatar-container {
+  position: relative;
+}
+
+.meta-container {
+  display: flex;
+  width: 40%;
+  /* justify-content: space-between;
+  align-items: center; */
+}
+
+.searchText {
+  color: #999999;
+  font-size: 13px;
+}
+
+.name {
+  color: black;
+  font-weight: 500;
+}
+.meta {
+  /* background: red; */
+  line-height: 1;
+  margin-left: 1rem;
+}
+
+mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color {
+  /* background: white; */
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #d4d4d4;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: gray;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+}
+
+.wContainer {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4%;
+  }

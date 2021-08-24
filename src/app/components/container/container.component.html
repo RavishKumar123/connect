@@ -1,0 +1,70 @@
+<ng-container>
+  <mat-sidenav-container class="example-container">
+    <mat-sidenav
+      #sidenav
+      mode="side"
+      opened
+      class="example-sidenav"
+      [fixedInViewport]="options.value.fixed"
+      [fixedTopGap]="options.value.top"
+      [fixedBottomGap]="options.value.bottom"
+    >
+      <p>
+        <mat-toolbar color="transparent">
+          <button
+            mat-icon-button
+            class="example-icon"
+            aria-label="Example icon-button with menu icon"
+          >
+            <mat-icon class="icon-theme">menu</mat-icon>
+          </button>
+          <span class="page-heading">Contacts</span>
+          <span class="example-spacer"></span>
+          <button
+            mat-icon-button
+            class="example-icon favorite-icon"
+            aria-label="Example icon-button with heart icon"
+          >
+            <mat-icon>chevron_left</mat-icon>
+          </button>
+          <button
+            mat-icon-button
+            class="example-icon"
+            aria-label="Example icon-button with share icon"
+          >
+            <mat-icon>chevron_right</mat-icon>
+          </button>
+        </mat-toolbar>
+      </p>
+
+      <div class="centerBox">
+        <div class="smDetail">
+          <span class="searchText">Search for a contact</span>
+          <p class="genInfo">Name,email or phone number</p>
+        </div>
+        <div class="smallBtn">
+          <mat-icon style="background-color: transparent; border: 0px"
+            >search</mat-icon
+          >
+        </div>
+      </div>
+
+      <div class="widge-container" *ngFor="let contact of contacts">
+        <app-widget
+          [contact]="contact"
+          (click)="selectContact(contact)"
+          style="cursor: pointer"
+        ></app-widget>
+      </div>
+    </mat-sidenav>
+
+    <mat-sidenav-content [formGroup]="options">
+      <div class="detail-box-container">
+        <div class="menuHam">
+          <mat-icon class="icon-theme" (click)="toogleMenu()">menu</mat-icon>
+        </div>
+        <app-detail-box [contact]="selectedContact"></app-detail-box>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</ng-container>

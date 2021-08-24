@@ -1,0 +1,79 @@
+mat-icon.detailIcon {
+  /* background: white; */
+  padding: 1rem;
+  border-radius: 6px;
+  border: 1px solid #d4d4d4;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  cursor: pointer;
+  color: gray;
+}
+
+img.detail-avatar {
+  border-radius: 4%;
+  width: 100%;
+}
+
+.col-md-8.d-meta {
+  /* background: red; */
+  display: flex;
+  align-items: baseline;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.d-meta .col-md-6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row.metaRow {
+  margin-bottom: 7%;
+}
+
+.row.metaDesc h3 {
+  color: #cab2e2;
+  float: right;
+}
+
+.detail-root {
+  margin-bottom: 250px;
+}
+.col-sm-6 .meet {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socials {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socialContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 45%;
+}
+.headIcons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+span.dept {
+  color: gray;
+  font-size: 16px;
+}
+
+h2.metaHeader {
+  font: 500 20px/32px Roboto, "Helvetica Neue", sans-serif;
+  letter-spacing: normal;
+  margin: 0 0 16px;
+  line-height: 1 !important;
+  font-size: 23px !important;
+}
